@@ -1,0 +1,1053 @@
+{
+  "kategori": {
+    "tanaman": "Tanaman",
+    "hewan": "Hewan",
+    "mineral": "Mineral & Logam",
+    "sintetis": "Sintetis"
+  },
+  "racun": [
+    {
+      "id": "sianida",
+      "katalog": "No. 001",
+      "nama": "Sianida",
+      "namaIlmiah": "Kalium sianida (KCN)",
+      "kategori": "sintetis",
+      "bahaya": 5,
+      "ringkas": "Racun cepat yang membuat sel tubuh tak bisa memakai oksigen.",
+      "wujud": {
+        "deskripsi": "Kristal atau butiran putih seperti garam kasar. Sebagian orang mencium bau 'almond pahit', tetapi banyak yang secara genetik tidak bisa menciumnya sama sekali.",
+        "warna": [
+          {
+            "hex": "#f4f2ec",
+            "nama": "Putih kristal"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Kalium sianida dibuat secara industri untuk pertambangan emas, penyepuhan logam, dan laboratorium. Senyawa sianida juga muncul di alam: singkong pahit, biji aprikot, dan asap kebakaran plastik atau busa.",
+        "paparan": [
+          "Menghirup asap kebakaran bangunan (plastik dan busa terbakar melepaskan hidrogen sianida).",
+          "Makan singkong pahit yang tidak direndam dan dimasak dengan benar.",
+          "Kecelakaan di tambang emas atau pabrik pelapisan logam."
+        ]
+      },
+      "caraKerja": "Sianida mengunci enzim di 'pembangkit listrik' sel (mitokondria). Darah tetap membawa oksigen, tetapi sel tidak bisa memakainya, jadi tubuh 'tercekik dari dalam'. Otak dan jantung, yang paling rakus oksigen, paling cepat terdampak.",
+      "gejala": {
+        "awal": [
+          "Sakit kepala dan pusing",
+          "Mual",
+          "Napas cepat dan terengah",
+          "Cemas, jantung berdebar"
+        ],
+        "lanjut": [
+          "Kebingungan",
+          "Lemas berat",
+          "Kulit tampak kemerahan"
+        ],
+        "berat": [
+          "Kejang",
+          "Napas melambat lalu berhenti",
+          "Henti jantung"
+        ]
+      },
+      "penawar": {
+        "nama": "Hidroksokobalamin (Cyanokit); alternatif natrium nitrit + natrium tiosulfat",
+        "catatan": "Diberikan lewat infus oleh tenaga medis di IGD atau ambulans."
+      },
+      "p3k": {
+        "lakukan": [
+          "Telepon 119 segera.",
+          "Pindahkan korban ke udara segar hanya bila lokasinya aman untuk Anda.",
+          "Lepas pakaian yang terkena, bilas kulit dengan air dan sabun.",
+          "Jika korban tidak bernapas dan Anda terlatih, lakukan kompresi dada (RJP)."
+        ],
+        "jangan": [
+          "Jangan memberi napas buatan mulut ke mulut tanpa alat pelindung.",
+          "Jangan masuk ke ruangan tertutup berisi asap atau gas.",
+          "Jangan memaksa korban muntah atau memberi minum."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Pembunuhan Tylenol, Chicago 1982",
+          "isi": "Tujuh orang meninggal setelah meminum kapsul obat yang dicampur sianida di rak toko. Tragedi ini melahirkan kemasan obat bersegel anti-rusak yang kita kenal sekarang."
+        },
+        {
+          "judul": "Legenda Rasputin",
+          "isi": "Kisah populer menyebut Rasputin selamat dari kue bersianida pada 1916. Para sejarawan meragukannya: kemungkinan racunnya tidak pernah benar-benar ada di kue itu."
+        }
+      ],
+      "vial": {
+        "bentuk": "kotak",
+        "tutup": "ulir",
+        "warnaTutup": "#1c1917",
+        "kaca": "hijau",
+        "kertas": "#ebe6d6",
+        "isi": "kristal",
+        "warnaIsi": "#f4f2ec",
+        "level": 0.22,
+        "detail": [
+          "tengkorak",
+          "rusuk"
+        ],
+        "skala": 0.94
+      }
+    },
+    {
+      "id": "arsenik",
+      "katalog": "No. 002",
+      "nama": "Arsenik",
+      "namaIlmiah": "Arsenik trioksida (As₂O₃)",
+      "kategori": "mineral",
+      "bahaya": 4,
+      "ringkas": "'Raja racun' abad pertengahan: tak berbau, hampir tak berasa.",
+      "wujud": {
+        "deskripsi": "Bubuk putih halus seperti tepung atau gula halus, tidak berbau dan hampir tidak berasa. Mudah menempel di dinding wadah.",
+        "warna": [
+          {
+            "hex": "#f1efe9",
+            "nama": "Putih tepung"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Arsenik terkandung di mineral seperti arsenopirit dan menjadi hasil sampingan peleburan bijih tembaga dan emas. Ia juga larut alami di air tanah beberapa wilayah, dan dulu dipakai sebagai racun tikus, pengawet kayu, serta pigmen hijau wallpaper.",
+        "paparan": [
+          "Minum air sumur dalam yang tercemar arsenik alami selama bertahun-tahun.",
+          "Debu dan asap di sekitar peleburan logam.",
+          "Kayu bangunan lama yang diawetkan dengan senyawa arsenik, terutama saat dibakar."
+        ]
+      },
+      "caraKerja": "Arsenik menempel pada protein dan enzim yang dipakai sel untuk menghasilkan energi. Akibatnya banyak organ rusak sekaligus: usus, jantung, saraf, dan kulit.",
+      "gejala": {
+        "awal": [
+          "Mual dan muntah",
+          "Sakit perut hebat",
+          "Napas berbau seperti bawang putih"
+        ],
+        "lanjut": [
+          "Diare cair hebat seperti kolera",
+          "Kram otot",
+          "Dehidrasi"
+        ],
+        "berat": [
+          "Gangguan irama jantung",
+          "Syok",
+          "Paparan jangka panjang: bercak gelap di kulit, kulit telapak menebal, garis putih melintang di kuku"
+        ]
+      },
+      "penawar": {
+        "nama": "Terapi khelasi: dimerkaprol (BAL), suksimer (DMSA), atau DMPS",
+        "catatan": "Obat pengikat logam ini hanya diberikan dan dipantau oleh dokter di rumah sakit."
+      },
+      "p3k": {
+        "lakukan": [
+          "Telepon 119 atau segera ke IGD.",
+          "Simpan wadah, bungkus, atau sampel bahan yang dicurigai.",
+          "Jika mengenai kulit atau mata, bilas dengan air mengalir minimal 15 menit."
+        ],
+        "jangan": [
+          "Jangan memaksa korban muntah.",
+          "Jangan memberi susu, minyak, atau 'penawar' rumahan lainnya.",
+          "Jangan menyapu bubuk tumpahan secara kering, karena debunya bisa terhirup."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Poudre de succession",
+          "isi": "Di Eropa abad ke-17, arsenik dijuluki 'bubuk warisan' karena konon dipakai untuk mempercepat datangnya warisan. Racun ini sulit dilacak sampai kimiawan James Marsh menciptakan uji forensik pada 1836."
+        },
+        {
+          "judul": "Wallpaper Napoleon",
+          "isi": "Rambut Napoleon mengandung arsenik tinggi. Salah satu dugaan: uap dari wallpaper berpigmen 'hijau Scheele' di kamarnya yang lembap di Pulau Saint Helena."
+        }
+      ],
+      "vial": {
+        "bentuk": "apoteker",
+        "tutup": "sumbat-kaca",
+        "warnaTutup": "#8a5a1f",
+        "kaca": "cokelat",
+        "kertas": "#d9e0c8",
+        "isi": "bubuk",
+        "warnaIsi": "#f1efe9",
+        "level": 0.18,
+        "detail": [
+          "retak"
+        ],
+        "skala": 0.98
+      }
+    },
+    {
+      "id": "belladonna",
+      "katalog": "No. 003",
+      "nama": "Belladonna",
+      "namaIlmiah": "Atropa belladonna (atropin, skopolamin)",
+      "kategori": "tanaman",
+      "bahaya": 4,
+      "ringkas": "Buah beri hitam yang manis dan berkilau, sangat berbahaya bagi anak-anak.",
+      "wujud": {
+        "deskripsi": "Buah beri hitam mengilap seukuran ceri kecil, duduk di atas kelopak hijau berbentuk bintang. Bunganya berbentuk lonceng berwarna ungu kecokelatan.",
+        "warna": [
+          {
+            "hex": "#0e0c12",
+            "nama": "Hitam mengilap"
+          },
+          {
+            "hex": "#5d3a4c",
+            "nama": "Ungu kecokelatan (bunga)"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Tumbuh liar di tepi hutan dan semak Eropa, Afrika Utara, dan Asia Barat. Di Indonesia, kerabatnya yang paling dikenal adalah kecubung (Datura), yang efeknya mirip.",
+        "paparan": [
+          "Anak-anak memakan buahnya yang terasa manis.",
+          "Buahnya dikira blueberry atau buah liar yang aman.",
+          "Mencoba 'teh' atau ramuan dari daun kecubung dan kerabatnya."
+        ]
+      },
+      "caraKerja": "Racunnya memblokir sinyal sistem saraf yang berfungsi sebagai 'rem' tubuh. Tanpa rem, jantung berpacu, pupil melebar, keringat dan air liur berhenti, dan otak menjadi kacau.",
+      "gejala": {
+        "awal": [
+          "Mulut sangat kering",
+          "Pupil melebar, penglihatan kabur",
+          "Kulit merah dan terasa panas"
+        ],
+        "lanjut": [
+          "Jantung berdebar cepat",
+          "Sulit buang air kecil",
+          "Gelisah, bicara kacau"
+        ],
+        "berat": [
+          "Halusinasi dan mengamuk",
+          "Demam tinggi",
+          "Kejang atau koma"
+        ]
+      },
+      "penawar": {
+        "nama": "Fisostigmin, ditambah obat penenang (benzodiazepin) bila gelisah berat",
+        "catatan": "Fisostigmin punya risiko tersendiri, sehingga hanya diberikan dokter dengan pemantauan jantung."
+      },
+      "p3k": {
+        "lakukan": [
+          "Telepon 119 atau bawa ke IGD.",
+          "Keluarkan sisa buah dari mulut korban.",
+          "Bawa contoh buah, daun, atau foto tanamannya.",
+          "Dinginkan tubuh bila korban terasa sangat panas."
+        ],
+        "jangan": [
+          "Jangan memaksa korban muntah.",
+          "Jangan meninggalkan korban yang gelisah atau berhalusinasi sendirian.",
+          "Jangan menunggu gejala hilang sendiri."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Kecantikan yang berbahaya",
+          "isi": "'Bella donna' berarti 'wanita cantik'. Perempuan Venesia konon meneteskan sari tanaman ini ke mata agar pupil tampak lebar dan memikat."
+        },
+        {
+          "judul": "Dari racun menjadi obat",
+          "isi": "Atropin dari tanaman ini kini menjadi obat penting di ruang gawat darurat, bahkan dipakai sebagai penawar keracunan pestisida organofosfat."
+        }
+      ],
+      "vial": {
+        "bentuk": "labu",
+        "tutup": "gabus",
+        "warnaTutup": "#a77b4f",
+        "kaca": "hijau",
+        "kertas": "#efe3c8",
+        "isi": "beri",
+        "warnaIsi": "#0e0c12",
+        "warnaCairan": "#e8eedc",
+        "level": 0.55,
+        "detail": [],
+        "skala": 0.96
+      }
+    },
+    {
+      "id": "hemlock",
+      "katalog": "No. 004",
+      "nama": "Hemlock",
+      "namaIlmiah": "Conium maculatum (koniin)",
+      "kategori": "tanaman",
+      "bahaya": 4,
+      "ringkas": "Tanaman yang menyerupai peterseli liar, racun yang diminum Socrates.",
+      "wujud": {
+        "deskripsi": "Sarinya berupa cairan berminyak bening hingga kuning sangat pucat dengan bau apak seperti tikus. Tanamannya punya batang hijau berongga dengan bintik ungu kemerahan dan bunga putih kecil berbentuk payung.",
+        "warna": [
+          {
+            "hex": "#f1e9b8",
+            "nama": "Kuning sangat pucat"
+          },
+          {
+            "hex": "#6f8f3a",
+            "nama": "Hijau batang"
+          },
+          {
+            "hex": "#6b2a4f",
+            "nama": "Bintik ungu"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Berasal dari Eropa dan Afrika Utara, kini menyebar di tepi jalan, parit, dan lahan terlantar di banyak benua. Semua bagian tanaman beracun, terutama bijinya.",
+        "paparan": [
+          "Dikira peterseli liar, wortel liar, atau adas saat mencari tanaman liar.",
+          "Anak-anak meniup batangnya yang berongga sebagai peluit.",
+          "Menyentuh atau memotong tanaman tanpa sarung tangan, lalu menyentuh mulut."
+        ]
+      },
+      "caraKerja": "Koniin memutus sambungan antara saraf dan otot. Kelumpuhan biasanya merayap dari kaki ke atas sampai otot pernapasan, sementara pikiran korban bisa tetap jernih.",
+      "gejala": {
+        "awal": [
+          "Mulut terasa terbakar",
+          "Air liur berlebih",
+          "Mual dan muntah",
+          "Gemetar"
+        ],
+        "lanjut": [
+          "Kaki terasa berat dan lemas",
+          "Pupil melebar",
+          "Kelumpuhan merayap ke atas"
+        ],
+        "berat": [
+          "Napas melemah",
+          "Gagal napas"
+        ]
+      },
+      "penawar": {
+        "nama": "Tidak ada antidot khusus",
+        "catatan": "Perawatan suportif di rumah sakit, terutama bantuan napas atau ventilator. Banyak pasien pulih jika napasnya ditopang tepat waktu."
+      },
+      "p3k": {
+        "lakukan": [
+          "Telepon 119 segera.",
+          "Simpan potongan tanaman untuk identifikasi.",
+          "Pantau napas korban terus-menerus.",
+          "Jika tidak sadar tetapi bernapas, baringkan dalam posisi pemulihan (miring)."
+        ],
+        "jangan": [
+          "Jangan memaksa korban muntah.",
+          "Jangan memberi minum jika korban sulit menelan.",
+          "Jangan membakar tanaman hemlock (asapnya ikut berbahaya)."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Kematian Socrates, 399 SM",
+          "isi": "Filsuf Athena ini dihukum mati dengan meminum ramuan hemlock. Plato menuliskan bahwa rasa dingin dan mati rasa naik perlahan dari kaki Socrates hingga ke dadanya."
+        }
+      ],
+      "vial": {
+        "bentuk": "tabung",
+        "tutup": "gabus",
+        "warnaTutup": "#b98c5c",
+        "kaca": "hijau",
+        "kertas": "#e8dcc0",
+        "isi": "batang",
+        "warnaIsi": "#6f8f3a",
+        "warnaCairan": "#f1e9b8",
+        "level": 0.72,
+        "detail": [
+          "lilin"
+        ],
+        "warnaLilin": "#6b2a2e",
+        "skala": 1
+      }
+    },
+    {
+      "id": "oleander",
+      "katalog": "No. 005",
+      "nama": "Oleander",
+      "namaIlmiah": "Nerium oleander (oleandrin)",
+      "kategori": "tanaman",
+      "bahaya": 4,
+      "ringkas": "Bunga hias cantik di tepi jalan yang menyimpan racun jantung.",
+      "wujud": {
+        "deskripsi": "Bunga merah muda, putih, atau merah dengan lima kelopak. Daunnya hijau tua, panjang, kaku, dan licin seperti kulit.",
+        "warna": [
+          {
+            "hex": "#f2a3b8",
+            "nama": "Merah muda"
+          },
+          {
+            "hex": "#f5f0ea",
+            "nama": "Putih"
+          },
+          {
+            "hex": "#2f4a2a",
+            "nama": "Hijau tua (daun)"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Berasal dari kawasan Mediterania dan Asia, kini menjadi tanaman hias taman dan pembatas jalan di seluruh dunia, termasuk Indonesia, tempat ia juga dikenal sebagai bunga mentega. Semua bagiannya beracun, termasuk getah, asap bakaran, dan air rendaman bunganya.",
+        "paparan": [
+          "Anak-anak mengunyah daun atau bunga.",
+          "Ternak atau hewan peliharaan memakan daunnya.",
+          "Membakar sampah kebun yang berisi ranting oleander."
+        ]
+      },
+      "caraKerja": "Oleandrin termasuk glikosida jantung. Ia mengacaukan pompa garam (natrium-kalium) di sel otot jantung, sehingga irama jantung melambat, lalu menjadi tidak teratur.",
+      "gejala": {
+        "awal": [
+          "Mual dan muntah",
+          "Sakit perut, diare",
+          "Mulut dan bibir terasa perih"
+        ],
+        "lanjut": [
+          "Denyut nadi lambat atau tidak teratur",
+          "Pusing, lemas",
+          "Penglihatan kabur"
+        ],
+        "berat": [
+          "Gangguan irama jantung yang berbahaya",
+          "Pingsan"
+        ]
+      },
+      "penawar": {
+        "nama": "Fragmen antibodi digoksin (Digoxin Immune Fab)",
+        "catatan": "Diberikan di rumah sakit dengan pemantauan EKG dan kadar kalium darah."
+      },
+      "p3k": {
+        "lakukan": [
+          "Telepon 119 atau segera ke IGD.",
+          "Bilas mulut dan buang sisa daun atau bunga.",
+          "Bawa contoh tanamannya.",
+          "Biarkan korban berbaring tenang."
+        ],
+        "jangan": [
+          "Jangan memaksa korban muntah.",
+          "Jangan memakai ranting oleander sebagai tusuk sate atau tusuk makanan.",
+          "Jangan membakar tanaman oleander."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Kisah tusuk sate",
+          "isi": "Cerita lama yang terus beredar menyebut sekelompok tentara keracunan setelah memanggang daging dengan ranting oleander. Kebenarannya diragukan, tetapi pesannya tetap benar: rantingnya memang beracun."
+        }
+      ],
+      "vial": {
+        "bentuk": "kerucut",
+        "tutup": "karet",
+        "warnaTutup": "#7a1f24",
+        "kaca": "hijau",
+        "kertas": "#f0dcd2",
+        "isi": "kelopak",
+        "warnaIsi": "#f2a3b8",
+        "warnaCairan": "#e9efe2",
+        "level": 0.62,
+        "detail": [],
+        "skala": 0.95
+      }
+    },
+    {
+      "id": "foxglove",
+      "katalog": "No. 006",
+      "nama": "Foxglove",
+      "namaIlmiah": "Digitalis purpurea (digitoksin)",
+      "kategori": "tanaman",
+      "bahaya": 3,
+      "ringkas": "Bunga lonceng yang melahirkan salah satu obat jantung tertua.",
+      "wujud": {
+        "deskripsi": "Bunga berbentuk lonceng atau tabung berwarna ungu hingga merah muda, dengan totol gelap di bagian dalamnya, tersusun rapat di tangkai yang tinggi. Daunnya lebar dan berbulu halus.",
+        "warna": [
+          {
+            "hex": "#b0578f",
+            "nama": "Ungu-merah muda"
+          },
+          {
+            "hex": "#4a1f3a",
+            "nama": "Totol gelap"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Berasal dari Eropa Barat dan banyak ditanam sebagai tanaman hias di daerah sejuk dan dataran tinggi.",
+        "paparan": [
+          "Daunnya dikira daun comfrey atau borage, lalu diseduh sebagai teh herbal.",
+          "Anak-anak mengisap madu dari bunganya.",
+          "Air vas bunga foxglove terminum."
+        ]
+      },
+      "caraKerja": "Seperti oleander, foxglove mengandung glikosida jantung yang memperlambat dan memperkuat detak jantung. Dalam dosis yang diukur dokter, ini menjadi obat. Sedikit saja lebih banyak, irama jantung bisa kacau.",
+      "gejala": {
+        "awal": [
+          "Mual, muntah, hilang nafsu makan",
+          "Sakit kepala",
+          "Lemas"
+        ],
+        "lanjut": [
+          "Penglihatan kekuningan atau ada lingkaran cahaya",
+          "Kebingungan",
+          "Denyut nadi lambat"
+        ],
+        "berat": [
+          "Irama jantung tidak teratur",
+          "Pingsan"
+        ]
+      },
+      "penawar": {
+        "nama": "Fragmen antibodi digoksin (Digoxin Immune Fab)",
+        "catatan": "Diberikan oleh tenaga medis dengan pemantauan jantung."
+      },
+      "p3k": {
+        "lakukan": [
+          "Telepon 119 atau segera ke IGD.",
+          "Bawa contoh daun atau bunga, atau sisa teh yang diminum.",
+          "Biarkan korban berbaring dan tidak banyak bergerak."
+        ],
+        "jangan": [
+          "Jangan memaksa korban muntah.",
+          "Jangan meracik teh dari daun liar yang tidak dikenal pasti.",
+          "Jangan memberi obat jantung milik orang lain."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "William Withering, 1785",
+          "isi": "Dokter Inggris ini meneliti ramuan herbal seorang tabib desa dan menemukan bahwa foxglove meredakan 'dropsy', yakni pembengkakan akibat gagal jantung. Penelitiannya menjadi dasar obat digoksin."
+        },
+        {
+          "judul": "Kuningnya Van Gogh?",
+          "isi": "Sebagian orang berteori bahwa warna kuning yang dominan dalam lukisan Van Gogh dipengaruhi pengobatan digitalis. Ini hanya spekulasi dan belum terbukti."
+        }
+      ],
+      "vial": {
+        "bentuk": "tinggi",
+        "tutup": "gabus-lebar",
+        "warnaTutup": "#9c7246",
+        "kaca": "cokelat",
+        "kertas": "#e6d6b6",
+        "isi": "lonceng",
+        "warnaIsi": "#b0578f",
+        "level": 0.75,
+        "detail": [],
+        "skala": 1.02
+      }
+    },
+    {
+      "id": "tetrodotoksin",
+      "katalog": "No. 007",
+      "nama": "Tetrodotoksin",
+      "namaIlmiah": "TTX, dari ikan buntal (Tetraodontidae)",
+      "kategori": "hewan",
+      "bahaya": 5,
+      "ringkas": "Racun ikan buntal yang tidak hilang walau dimasak.",
+      "wujud": {
+        "deskripsi": "Dalam bentuk murni berupa bubuk kristal putih atau bening yang larut dalam air. Di alam ia tidak terlihat sama sekali karena tersimpan di dalam jaringan hewan.",
+        "warna": [
+          {
+            "hex": "#f3f5f2",
+            "nama": "Bening / putih"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Dihasilkan bakteri yang hidup di tubuh ikan buntal, gurita cincin biru, beberapa jenis kadal air, dan siput laut. Pada ikan buntal, racun terkumpul paling banyak di hati, indung telur, dan kulit. Ikan buntal juga ditemukan di perairan Indonesia.",
+        "paparan": [
+          "Membersihkan dan memasak ikan buntal sendiri tanpa keahlian.",
+          "Ikan buntal yang dijual tercampur dengan ikan lain.",
+          "Memegang gurita cincin biru di kolam pasang surut."
+        ]
+      },
+      "caraKerja": "TTX menyumbat 'gerbang' natrium pada saraf, sehingga sinyal saraf berhenti mengalir. Otot melumpuh, termasuk otot napas, sementara korban sering tetap sadar. Racun ini tahan panas, jadi tidak hilang meski dimasak.",
+      "gejala": {
+        "awal": [
+          "Kesemutan dan mati rasa di bibir dan lidah",
+          "Mati rasa menjalar ke wajah dan jari",
+          "Mual, pusing"
+        ],
+        "lanjut": [
+          "Otot lemah, sulit berjalan",
+          "Sulit bicara dan menelan",
+          "Air liur berlebih"
+        ],
+        "berat": [
+          "Kelumpuhan menyeluruh",
+          "Gagal napas",
+          "Tekanan darah turun"
+        ]
+      },
+      "penawar": {
+        "nama": "Tidak ada antidot",
+        "catatan": "Perawatan di rumah sakit berupa bantuan napas (ventilator) sampai tubuh membuang racunnya. Banyak korban selamat bila napasnya ditopang."
+      },
+      "p3k": {
+        "lakukan": [
+          "Telepon 119 segera, begitu muncul kesemutan di bibir setelah makan ikan.",
+          "Pantau napas korban terus-menerus.",
+          "Jika napas berhenti dan Anda terlatih, lakukan RJP.",
+          "Simpan sisa ikan untuk diperiksa."
+        ],
+        "jangan": [
+          "Jangan menunggu gejala memburuk sebelum mencari pertolongan.",
+          "Jangan memaksa korban muntah.",
+          "Jangan menganggap korban yang diam berarti tidak sadar; ia mungkin mendengar semuanya."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Kapten James Cook, 1774",
+          "isi": "Dalam pelayarannya, Cook dan dua perwiranya mencicipi sedikit hati ikan buntal. Mereka mengalami mati rasa dan lemas berat, tetapi selamat. Babi kapal yang memakan sisa jeroannya mati."
+        },
+        {
+          "judul": "Koki berlisensi",
+          "isi": "Di Jepang, hidangan fugu hanya boleh disiapkan koki yang lulus ujian dan pelatihan khusus selama bertahun-tahun."
+        }
+      ],
+      "vial": {
+        "bentuk": "ampul",
+        "tutup": "pita",
+        "warnaTutup": "#2e5d7a",
+        "kaca": "bening",
+        "kertas": "#dbe4e4",
+        "isi": "cairan",
+        "warnaCairan": "#eef3ee",
+        "level": 0.6,
+        "detail": [
+          "buntal"
+        ],
+        "skala": 0.8
+      }
+    },
+    {
+      "id": "bisa-kobra",
+      "katalog": "No. 008",
+      "nama": "Bisa Kobra",
+      "namaIlmiah": "Naja spp. (mis. Naja sputatrix, kobra Jawa)",
+      "kategori": "hewan",
+      "bahaya": 5,
+      "ringkas": "Bisa saraf dari ular yang hidup dekat sawah dan kebun di Indonesia.",
+      "wujud": {
+        "deskripsi": "Cairan kental berwarna kuning pucat hingga amber, mengalir lambat seperti madu encer. Jika dikeringkan menjadi kristal kekuningan.",
+        "warna": [
+          {
+            "hex": "#d9a441",
+            "nama": "Kuning pucat"
+          },
+          {
+            "hex": "#b8741c",
+            "nama": "Amber"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Dihasilkan kelenjar bisa di kepala ular kobra. Di Indonesia hidup kobra Jawa (Naja sputatrix) dan kobra Sumatra (Naja sumatrana), keduanya mampu menyemburkan bisa ke arah mata.",
+        "paparan": [
+          "Menginjak ular saat berjalan di kebun, sawah, atau pekarangan pada malam hari.",
+          "Mencoba menangkap, memegang, atau membunuh ular.",
+          "Terkena semburan bisa di mata."
+        ]
+      },
+      "caraKerja": "Bisa kobra mengandung neurotoksin yang memutus sinyal saraf ke otot, sehingga otot melemah hingga lumpuh. Bisa ini juga merusak jaringan di sekitar gigitan.",
+      "gejala": {
+        "awal": [
+          "Nyeri dan bengkak di bekas gigitan",
+          "Mual, pusing"
+        ],
+        "lanjut": [
+          "Kelopak mata turun",
+          "Sulit menelan dan bicara",
+          "Air liur berlebih",
+          "Kulit di sekitar gigitan menghitam"
+        ],
+        "berat": [
+          "Kelumpuhan",
+          "Gagal napas",
+          "Semburan di mata: nyeri hebat, mata merah, risiko buta"
+        ]
+      },
+      "penawar": {
+        "nama": "Serum Anti Bisa Ular (SABU) polivalen",
+        "catatan": "Hanya diberikan di rumah sakit oleh tenaga medis, karena tubuh bisa bereaksi alergi terhadap serum."
+      },
+      "p3k": {
+        "lakukan": [
+          "Jauhi ular, tenangkan korban, dan minimalkan gerakannya.",
+          "Imobilisasi anggota tubuh yang tergigit dengan bidai, seperti menangani patah tulang.",
+          "Lepas cincin, gelang, atau jam sebelum bengkak.",
+          "Segera bawa ke IGD atau telepon 119.",
+          "Semburan di mata: bilas dengan banyak air bersih."
+        ],
+        "jangan": [
+          "Jangan menyayat, mengisap, atau 'mengeluarkan bisa' dari luka.",
+          "Jangan mengikat torniket kencang.",
+          "Jangan mengompres dengan es atau mengoleskan ramuan.",
+          "Jangan mengejar atau membunuh ular. Bila aman, cukup foto dari jauh."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Cleopatra, 30 SM",
+          "isi": "Ratu Mesir itu dikisahkan wafat oleh gigitan 'asp', yang kemungkinan besar adalah kobra Mesir. Sejarawan masih memperdebatkan apakah kisah ini benar."
+        },
+        {
+          "judul": "19 September",
+          "isi": "Hari Kesadaran Gigitan Ular Internasional. WHO memasukkan gigitan ular sebagai penyakit tropis terabaikan yang menimpa jutaan orang setiap tahun."
+        }
+      ],
+      "vial": {
+        "bentuk": "tetes",
+        "tutup": "lilin",
+        "warnaTutup": "#7a1f24",
+        "kaca": "cokelat",
+        "kertas": "#eadfc4",
+        "isi": "kental",
+        "warnaCairan": "#c48a2a",
+        "level": 0.5,
+        "detail": [
+          "tengkorak"
+        ],
+        "skala": 0.97
+      }
+    },
+    {
+      "id": "bisa-derik",
+      "katalog": "No. 009",
+      "nama": "Bisa Ular Derik",
+      "namaIlmiah": "Crotalus spp. (rattlesnake)",
+      "kategori": "hewan",
+      "bahaya": 4,
+      "ringkas": "Bisa yang merusak darah dan jaringan, dengan ekor berbunyi sebagai peringatan.",
+      "wujud": {
+        "deskripsi": "Cairan kuning hingga kuning keemasan, sedikit lebih terang dan lebih encer daripada bisa kobra.",
+        "warna": [
+          {
+            "hex": "#e3b52f",
+            "nama": "Kuning keemasan"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Ular derik hanya hidup di benua Amerika, dari Kanada selatan hingga Argentina, terutama di gurun dan padang rumput. Di Indonesia, kerabat dekatnya yang efeknya mirip adalah ular tanah (Calloselasma rhodostoma).",
+        "paparan": [
+          "Mendaki atau berkemah dan tidak sengaja menginjaknya.",
+          "Mengangkat batu atau kayu tempat ular bersembunyi.",
+          "Memegang ular yang dikira sudah mati."
+        ]
+      },
+      "caraKerja": "Bisanya kaya enzim yang merusak dinding pembuluh darah, mengacaukan pembekuan darah, dan menghancurkan otot di sekitar gigitan. Beberapa spesies juga punya komponen racun saraf.",
+      "gejala": {
+        "awal": [
+          "Nyeri hebat dan terbakar di bekas gigitan",
+          "Bengkak cepat menjalar",
+          "Rasa logam di mulut"
+        ],
+        "lanjut": [
+          "Memar dan lepuh berdarah",
+          "Mual, berkeringat",
+          "Gusi atau hidung berdarah"
+        ],
+        "berat": [
+          "Tekanan darah turun, syok",
+          "Perdarahan yang sulit berhenti",
+          "Kerusakan jaringan permanen"
+        ]
+      },
+      "penawar": {
+        "nama": "Antivenom spesifik ular derik (mis. CroFab, Anavip)",
+        "catatan": "Diberikan di rumah sakit, sering dalam beberapa dosis sesuai perkembangan gejala."
+      },
+      "p3k": {
+        "lakukan": [
+          "Menjauh dari ular, minimal sejauh dua kali panjang tubuhnya.",
+          "Tenangkan korban dan buat ia tetap diam.",
+          "Lepas perhiasan dan pakaian ketat di dekat gigitan.",
+          "Segera ke rumah sakit."
+        ],
+        "jangan": [
+          "Jangan menyayat atau mengisap luka.",
+          "Jangan memasang torniket atau perban ketat.",
+          "Jangan mengompres es.",
+          "Jangan memegang kepala ular, bahkan yang sudah mati."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Gigitan setelah mati",
+          "isi": "Kepala ular derik yang sudah terpenggal masih bisa menggigit secara refleks selama beberapa waktu. Banyak korban tergigit justru oleh ular yang dikira sudah mati."
+        },
+        {
+          "judul": "Mitos usia derik",
+          "isi": "Satu ruas derik bertambah setiap kali ular berganti kulit, bisa beberapa kali setahun. Jadi jumlah ruas tidak menunjukkan umurnya."
+        }
+      ],
+      "vial": {
+        "bentuk": "pipih",
+        "tutup": "sumbat-faset",
+        "warnaTutup": "#c9a24a",
+        "kaca": "hijau",
+        "kertas": "#efe0b8",
+        "isi": "kental",
+        "warnaCairan": "#e3b52f",
+        "level": 0.56,
+        "detail": [
+          "retak"
+        ],
+        "kekentalan": 0.6,
+        "skala": 0.92
+      }
+    },
+    {
+      "id": "merkuri",
+      "katalog": "No. 010",
+      "nama": "Merkuri",
+      "namaIlmiah": "Raksa (Hg)",
+      "kategori": "mineral",
+      "bahaya": 3,
+      "ringkas": "Logam cair yang cantik berkilau, tetapi uapnya diam-diam merusak saraf.",
+      "wujud": {
+        "deskripsi": "Satu-satunya logam yang cair pada suhu ruang: keperakan, sangat mengilap, dan membentuk butiran bulat yang mudah menggelinding. Ia menguap perlahan menjadi uap yang tidak terlihat.",
+        "warna": [
+          {
+            "hex": "#c9ccd1",
+            "nama": "Perak cermin"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Berasal dari bijih sinabar yang berwarna merah. Dulu dipakai di termometer dan tensimeter. Di Indonesia, merkuri masih dipakai secara ilegal di tambang emas skala kecil. Bentuk organiknya, metilmerkuri, menumpuk di ikan predator besar.",
+        "paparan": [
+          "Termometer atau tensimeter air raksa pecah di rumah.",
+          "Menghirup uap saat amalgam emas dibakar di tambang rakyat.",
+          "Rutin makan ikan predator dari perairan yang tercemar."
+        ]
+      },
+      "caraKerja": "Uap merkuri yang terhirup masuk ke darah lalu ke otak dan ginjal. Metilmerkuri dari makanan merusak sistem saraf, dan janin paling rentan. Merkuri cair yang tertelan sedikit justru jarang diserap usus; bahaya utamanya adalah uap.",
+      "gejala": {
+        "awal": [
+          "Uap dalam jumlah besar: batuk, sesak, nyeri dada",
+          "Rasa logam di mulut"
+        ],
+        "lanjut": [
+          "Tangan gemetar",
+          "Mudah marah, cemas, sulit tidur",
+          "Gusi meradang"
+        ],
+        "berat": [
+          "Kesemutan dan mati rasa",
+          "Gangguan penglihatan, pendengaran, dan keseimbangan",
+          "Kerusakan ginjal"
+        ]
+      },
+      "penawar": {
+        "nama": "Terapi khelasi: suksimer (DMSA), DMPS, atau dimerkaprol",
+        "catatan": "Hanya oleh dokter. Langkah terpenting adalah menghentikan sumber paparan."
+      },
+      "p3k": {
+        "lakukan": [
+          "Termometer pecah: buka jendela, keluarkan anak-anak dan hewan dari ruangan.",
+          "Kumpulkan butiran dengan kertas kaku atau selotip, masukkan ke wadah kaca tertutup.",
+          "Buang sebagai limbah B3, bukan ke tempat sampah biasa.",
+          "Paparan uap besar: pindah ke udara segar dan telepon 119."
+        ],
+        "jangan": [
+          "Jangan menyedot dengan vacuum cleaner atau menyapu, karena uapnya akan menyebar.",
+          "Jangan menyentuh butirannya dengan tangan kosong.",
+          "Jangan membuang ke saluran air."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "'Mad as a hatter'",
+          "isi": "Pembuat topi di abad ke-18 dan 19 memakai merkuri nitrat untuk mengolah bulu. Banyak yang mengalami tremor dan perubahan perilaku, asal-usul ungkapan 'segila tukang topi'."
+        },
+        {
+          "judul": "Tragedi Minamata",
+          "isi": "Pada 1950-an, pabrik di Minamata, Jepang, membuang limbah metilmerkuri ke teluk. Ribuan warga yang makan ikan dari teluk itu mengalami kerusakan saraf. Namanya kini diabadikan dalam Konvensi Minamata."
+        }
+      ],
+      "vial": {
+        "bentuk": "gabus",
+        "tutup": "gabus",
+        "warnaTutup": "#8d6a43",
+        "kaca": "hijau",
+        "kertas": "#e2e4dc",
+        "isi": "merkuri",
+        "warnaIsi": "#c9ccd1",
+        "level": 0.2,
+        "detail": [
+          "lilin"
+        ],
+        "warnaLilin": "#2f4a2a",
+        "skala": 0.86
+      }
+    },
+    {
+      "id": "timbal",
+      "katalog": "No. 011",
+      "nama": "Timbal",
+      "namaIlmiah": "Plumbum (Pb)",
+      "kategori": "mineral",
+      "bahaya": 3,
+      "ringkas": "Logam berat yang perlahan menumpuk dan paling merugikan otak anak.",
+      "wujud": {
+        "deskripsi": "Logam abu-abu kebiruan yang kusam, lunak, dan sangat berat. Permukaan yang baru dipotong tampak mengilap, lalu cepat kusam saat terkena udara.",
+        "warna": [
+          {
+            "hex": "#6d7378",
+            "nama": "Abu-abu kebiruan kusam"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Ditambang dari bijih galena. Sumber paparan sehari-hari antara lain cat lama berbasis timbal, peleburan aki bekas, pipa air lama, glasir keramik tertentu, dan pemberat pancing. Indonesia telah menghentikan bensin bertimbal sejak 2006.",
+        "paparan": [
+          "Anak-anak menelan serpihan atau debu cat lama.",
+          "Tinggal dekat tempat peleburan aki bekas rumahan.",
+          "Memakai wadah keramik berglasir timbal untuk makanan asam."
+        ]
+      },
+      "caraKerja": "Tubuh keliru menganggap timbal sebagai kalsium, besi, atau seng, lalu memasukkannya ke tempat yang salah. Timbal mengganggu perkembangan otak, pembentukan darah, dan ginjal, lalu menumpuk di tulang selama bertahun-tahun. Tidak ada kadar timbal yang aman bagi anak.",
+      "gejala": {
+        "awal": [
+          "Sering samar: lelah, mudah marah",
+          "Sakit perut dan sembelit",
+          "Sakit kepala"
+        ],
+        "lanjut": [
+          "Pada anak: sulit konsentrasi, prestasi belajar turun",
+          "Anemia, kulit pucat",
+          "Garis kebiruan di gusi"
+        ],
+        "berat": [
+          "Kelemahan tangan dan kaki",
+          "Kejang",
+          "Pembengkakan otak (ensefalopati)"
+        ]
+      },
+      "penawar": {
+        "nama": "Terapi khelasi: suksimer (DMSA), CaNa₂EDTA, atau dimerkaprol",
+        "catatan": "Diputuskan dokter berdasarkan kadar timbal darah. Kuncinya tetap menghentikan sumber paparan."
+      },
+      "p3k": {
+        "lakukan": [
+          "Curiga paparan jangka panjang: minta dokter memeriksa kadar timbal darah.",
+          "Anak menelan benda bertimbal (pemberat pancing, mainan logam): segera ke IGD.",
+          "Bersihkan debu cat lama dengan lap basah.",
+          "Cuci tangan anak sebelum makan."
+        ],
+        "jangan": [
+          "Jangan menyapu atau mengampelas cat lama secara kering.",
+          "Jangan melebur aki atau logam bekas di rumah.",
+          "Jangan menunggu sampai gejala jelas, karena kerusakan pada anak bisa tidak terlihat."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Pipa Romawi",
+          "isi": "Bangsa Romawi memakai timbal (plumbum) untuk pipa air, asal kata 'plumbing' dalam bahasa Inggris. Mereka juga merebus sirup anggur 'sapa' di panci timbal agar terasa manis."
+        },
+        {
+          "judul": "Ekspedisi Franklin, 1845",
+          "isi": "Kapal penjelajah Inggris yang hilang di Arktik membawa makanan kaleng berpatri timbal. Analisis tulang awak menunjukkan kadar timbal tinggi, yang diduga ikut berperan dalam bencana itu."
+        }
+      ],
+      "vial": {
+        "bentuk": "silinder",
+        "tutup": "kaleng",
+        "warnaTutup": "#5b5f63",
+        "kaca": "bening",
+        "kertas": "#d8cfbd",
+        "isi": "pelet",
+        "warnaIsi": "#6d7378",
+        "level": 0.34,
+        "detail": [],
+        "skala": 0.82
+      }
+    },
+    {
+      "id": "amanita",
+      "katalog": "No. 012",
+      "nama": "Amanita phalloides",
+      "namaIlmiah": "Jamur death cap (amatoksin)",
+      "kategori": "tanaman",
+      "subKategori": "Jamur (Fungi)",
+      "bahaya": 5,
+      "ringkas": "Jamur maut yang tampak lezat dan tidak hilang racunnya walau dimasak.",
+      "wujud": {
+        "deskripsi": "Tudung hijau zaitun hingga kekuningan, kadang pucat keputihan, dengan insang putih di bawahnya. Ada cincin seperti rok di batang dan kantong (volva) di pangkalnya, yang sering tertimbun tanah.",
+        "warna": [
+          {
+            "hex": "#8a8f45",
+            "nama": "Hijau zaitun"
+          },
+          {
+            "hex": "#c4bf72",
+            "nama": "Kekuningan"
+          },
+          {
+            "hex": "#f3efe2",
+            "nama": "Insang putih"
+          }
+        ]
+      },
+      "asal": {
+        "deskripsi": "Berasal dari Eropa dan kini menyebar ke Amerika, Australia, dan Asia, tumbuh di bawah pohon ek, kastanye, dan pinus. Jamur ini menyebabkan sebagian besar kematian akibat keracunan jamur di dunia.",
+        "paparan": [
+          "Saat muda, jamur ini mirip jamur merang dan jamur yang biasa dimakan lainnya.",
+          "Memetik jamur liar berdasarkan 'tes' tradisional yang tidak terbukti.",
+          "Racunnya tidak hilang dengan dimasak, dikeringkan, atau dibekukan."
+        ]
+      },
+      "caraKerja": "Amatoksin menghentikan mesin sel yang membuat protein. Sel hati dan ginjal, yang bekerja paling keras, paling dulu mati. Gejala baru muncul berjam-jam setelah makan, saat kerusakan sudah berjalan.",
+      "gejala": {
+        "awal": [
+          "6–24 jam pertama: tidak ada gejala sama sekali",
+          "Lalu: muntah dan diare cair hebat",
+          "Kram perut"
+        ],
+        "lanjut": [
+          "Tampak membaik 1–2 hari ('bulan madu palsu')",
+          "Sementara itu hati terus rusak diam-diam"
+        ],
+        "berat": [
+          "Kulit dan mata menguning",
+          "Perdarahan",
+          "Gagal hati dan gagal ginjal"
+        ]
+      },
+      "penawar": {
+        "nama": "Tidak ada antidot pasti; silibinin intravena dan N-asetilsistein",
+        "catatan": "Diberikan di rumah sakit bersama perawatan intensif. Kasus berat bisa memerlukan transplantasi hati."
+      },
+      "p3k": {
+        "lakukan": [
+          "Segera ke IGD atau telepon 119, meski belum ada gejala.",
+          "Bawa sisa jamur, simpan dalam kertas, bukan plastik.",
+          "Catat jam makan dan siapa saja yang ikut makan.",
+          "Periksakan semua orang yang ikut makan, termasuk yang merasa sehat."
+        ],
+        "jangan": [
+          "Jangan percaya 'tes' rakyat: sendok perak, bawang yang menghitam, atau jamur yang dimakan hewan. Semuanya mitos.",
+          "Jangan tertipu fase 'membaik'.",
+          "Jangan memaksa muntah tanpa arahan tenaga medis."
+        ]
+      },
+      "sejarah": [
+        {
+          "judul": "Kaisar Claudius, 54 M",
+          "isi": "Sejarawan Romawi menulis bahwa Claudius wafat setelah menyantap hidangan jamur kesukaannya, yang diduga dibubuhi racun oleh istrinya, Agrippina, agar Nero naik takhta."
+        }
+      ],
+      "vial": {
+        "bentuk": "toples",
+        "tutup": "kubah-kaca",
+        "warnaTutup": "#9fb39a",
+        "kaca": "hijau",
+        "kertas": "#e9e1c6",
+        "isi": "jamur",
+        "warnaIsi": "#8a8f45",
+        "warnaCairan": "#edf1e4",
+        "level": 0.8,
+        "detail": [
+          "tengkorak"
+        ],
+        "skala": 0.9
+      }
+    }
+  ]
+}

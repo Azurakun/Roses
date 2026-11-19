@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apotek Gelap · The Poisoner's Shelf</title>
+  <meta name="description" content="Ensiklopedia racun interaktif berbentuk rak apotek tua: wujud asli, gejala, penawar, dan pertolongan pertama.">
+  <meta name="theme-color" content="#140e0a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Lewati ke konten</a>
+
+  <!-- lapisan latar -->
+  <div class="bg-wall" aria-hidden="true"></div>
+  <div class="bg-lamp" aria-hidden="true"></div>
+  <canvas class="bg-dust" aria-hidden="true"></canvas>
+  <div class="bg-vignette" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#/rak" aria-label="Apotek Gelap, kembali ke rak">
+      <svg class="brand-mark" viewBox="0 0 24 32" aria-hidden="true"><path d="M9 2h6v3h-1v5c4 1.6 6 4.6 6 9.2C20 25.5 16.4 30 12 30S4 25.5 4 19.2C4 14.6 6 11.6 10 10V5H9z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5.6 20.5c2 .8 4.4.9 6.4 0s4.4-.8 6.4 0C18 25.4 15.3 28.6 12 28.6s-6-3.2-6.4-8.1z" fill="currentColor" opacity=".55"/></svg>
+      <span class="brand-text">Apotek Gelap</span>
+    </a>
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="#/rak" data-nav="rak">Rak</a>
+      <a href="#/tentang" data-nav="tentang">Tentang</a>
+      <a href="#/darurat" data-nav="darurat" class="nav-sos"><span class="sos-dot" aria-hidden="true"></span>Darurat <b>119</b></a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- ============ RAK ============ -->
+    <section class="view view-rak" data-view="rak" aria-labelledby="judul-rak">
+      <div class="hero">
+        <p class="hero-kicker">Ensiklopedia racun · Koleksi apoteker, ca. 1887</p>
+        <h1 id="judul-rak" class="hero-title">Apotek Gelap</h1>
+        <p class="hero-sub">The Poisoner's Shelf</p>
+        <p class="hero-lede">Dua belas botol, dua belas kisah. Ambil satu dari rak untuk membaca catatan sang apoteker: wujud asli, gejala, penawar, dan apa yang harus dilakukan sebelum tiba di rumah sakit.</p>
+      </div>
+
+      <form class="filters" role="search" aria-label="Saring koleksi" onsubmit="return false">
+        <div class="f-group f-search">
+          <label for="cari" class="f-label">Cari nama</label>
+          <div class="search-wrap">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <input id="cari" type="search" autocomplete="off" placeholder="mis. arsenik, Conium…">
+          </div>
+        </div>
+        <fieldset class="f-group f-cat">
+          <legend class="f-label">Kategori</legend>
+          <div class="chips" id="chips-kategori"></div>
+        </fieldset>
+        <fieldset class="f-group f-danger">
+          <legend class="f-label">Bahaya minimal</legend>
+          <div class="skulls" id="skull-filter"></div>
+        </fieldset>
+      </form>
+
+      <p class="shelf-count" id="shelf-count" aria-live="polite"></p>
+
+      <div class="cabinet" id="cabinet">
+        <div class="cabinet-crown" aria-hidden="true">
+          <span class="candle candle-l"><i class="flame"></i></span>
+          <span class="crown-plate">Venena · Antidota</span>
+          <span class="candle candle-r"><i class="flame"></i></span>
+        </div>
+        <div class="cabinet-body">
+          <div class="cabinet-light" aria-hidden="true"></div>
+          <div class="shelves" id="shelves"></div>
+          <div class="shelf-empty" id="shelf-empty" hidden>
+            <p>Rak ini kosong.</p>
+            <button type="button" class="btn-ghost" id="reset-filter">Hapus saringan</button>
+          </div>
+        </div>
+        <div class="cabinet-foot" aria-hidden="true"></div>
+      </div>
+
+      <p class="shelf-hint">Tekan <kbd>Tab</kbd> untuk memilih botol, <kbd>Enter</kbd> untuk mengambilnya, <kbd>Esc</kbd> untuk mengembalikan.</p>
+    </section>
+
+    <!-- ============ DARURAT ============ -->
+    <section class="view view-darurat" data-view="darurat" aria-labelledby="judul-darurat" hidden>
+      <div class="page-paper sos-page">
+        <p class="page-kicker">Halaman darurat</p>
+        <h1 id="judul-darurat">Curiga keracunan? Jangan menunggu.</h1>
+        <p class="lede">Telepon bantuan dulu, baca belakangan. Semua langkah di situs ini hanya pertolongan sementara sampai tenaga medis mengambil alih.</p>
+
+        <div class="sos-grid">
+          <a class="sos-card sos-main" href="tel:119">
+            <span class="sos-num">119</span>
+            <span class="sos-name">Ambulans &amp; gawat darurat medis</span>
+            <span class="sos-note">Layanan PSC 119 / SPGDT Kemenkes, gratis, 24 jam</span>
+          </a>
+          <a class="sos-card" href="tel:112">
+            <span class="sos-num">112</span>
+            <span class="sos-name">Panggilan darurat terpadu</span>
+            <span class="sos-note">Tersedia di banyak kota; diteruskan ke layanan terkait</span>
+          </a>
+          <a class="sos-card" href="tel:113">
+            <span class="sos-num">113</span>
+            <span class="sos-name">Pemadam kebakaran</span>
+            <span class="sos-note">Kebocoran gas, asap, atau tumpahan bahan kimia</span>
+          </a>
+          <div class="sos-card sos-siker">
+            <span class="sos-num">SIKerNas</span>
+            <span class="sos-name">Sentra Informasi Keracunan Nasional, BPOM</span>
+            <span class="sos-note">Konsultasi keracunan obat, makanan, bahan kimia, tanaman, dan hewan. Hubungi lewat <a href="tel:1500533">Halo BPOM 1500533</a> dan minta disambungkan ke SIKer, atau cek kontak SIKer daerah terbaru di <a href="https://www.pom.go.id" target="_blank" rel="noopener">pom.go.id</a>.</span>
+          </div>
+        </div>
+
+        <p class="sos-igd"><strong>Atau langsung ke IGD rumah sakit terdekat.</strong> Jika korban tidak sadar, kejang, atau sulit bernapas, jangan menunda.</p>
+
+        <div class="sos-steps">
+          <div>
+            <h2>Yang dilakukan</h2>
+            <ol>
+              <li>Pastikan lokasi aman bagi Anda: jauhi gas, asap, atau hewan berbisa.</li>
+              <li>Periksa apakah korban sadar dan bernapas.</li>
+              <li>Telepon 119, sebutkan alamat yang jelas.</li>
+              <li>Bawa wadah, kemasan, sisa tanaman, jamur, atau foto hewan penyebab.</li>
+              <li>Catat jam kejadian dan gejala yang muncul.</li>
+              <li>Korban tidak sadar tetapi bernapas: baringkan miring (posisi pemulihan).</li>
+            </ol>
+          </div>
+          <div>
+            <h2>Yang jangan dilakukan</h2>
+            <ul class="no-list">
+              <li>Jangan memaksa korban muntah, kecuali diarahkan tenaga medis.</li>
+              <li>Jangan memberi susu, minyak kelapa, garam, atau 'penawar' rumahan.</li>
+              <li>Jangan memberi makan atau minum pada korban yang mengantuk atau sulit menelan.</li>
+              <li>Jangan menyayat atau mengisap luka gigitan ular.</li>
+              <li>Jangan menunggu gejala muncul. Beberapa racun baru terasa berjam-jam kemudian.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fine">Nomor diperiksa November 2026. Kontak SIKer bisa berubah; simpan nomor IGD rumah sakit terdekat di ponsel Anda.</p>
+      </div>
+    </section>
+
+    <!-- ============ TENTANG ============ -->
+    <section class="view view-tentang" data-view="tentang" aria-labelledby="judul-tentang" hidden>
+      <div class="page-paper">
+        <p class="page-kicker">Catatan pembuka</p>
+        <h1 id="judul-tentang">Tentang Apotek Gelap</h1>
+        <p class="lede">Apotek Gelap adalah ensiklopedia kecil tentang racun terkenal dari tanaman, hewan, mineral, dan bahan buatan manusia, ditata seperti lemari apoteker abad ke-19.</p>
+        <p>Situs ini dibuat untuk pelajar, penggemar sejarah dan sains, penulis cerita misteri, dan siapa saja yang ingin mengenali tanda keracunan lalu bertindak cepat. Setiap botol berisi wujud asli racunnya, asal dan cara orang terpapar tanpa sengaja, cara kerjanya dalam bahasa awam, gejala, penawar, pertolongan pertama, dan sepotong kisah sejarah.</p>
+
+        <div class="disclaimer" role="note">
+          <h2>Penafian</h2>
+          <p><strong>Situs ini hanya untuk edukasi dan bukan pengganti tenaga medis.</strong> Informasinya disederhanakan dan tidak mencakup dosis, cara pengobatan lengkap, atau setiap kemungkinan kasus. Penawar yang disebutkan hanya boleh diberikan oleh dokter atau tenaga medis terlatih.</p>
+          <p>Bila Anda atau orang lain mungkin keracunan, segera hubungi <a href="tel:119">119</a> atau datang ke IGD terdekat. Lihat juga <a href="#/darurat">halaman Darurat</a>.</p>
+        </div>
+
+        <h2>Sumber rujukan umum</h2>
+        <p>Isi disusun dari pengetahuan toksikologi umum yang banyak dipakai, antara lain pedoman WHO tentang penanganan gigitan ular, informasi keracunan BPOM, dan buku teks toksikologi klinis. Untuk keputusan medis, selalu rujuk tenaga kesehatan.</p>
+
+        <h2>Tentang botol-botolnya</h2>
+        <p>Setiap vial digambar dengan kode (SVG), bukan foto. Isinya mengikuti wujud asli racunnya: kristal putih sianida, merkuri yang berkilau, bisa kobra yang kental. Racun yang sama-sama putih atau bening dibedakan lewat bentuk botol, warna tutup, dan warna kertas labelnya.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Apotek Gelap · untuk edukasi, bukan pengganti tenaga medis. Darurat: <a href="tel:119">119</a></p>
+  </footer>
+
+  <!-- ============ PANEL DETAIL ============ -->
+  <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+  <article class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <div class="sheet-grip" aria-hidden="true"></div>
+    <div class="sheet-inner">
+      <div class="page page-left">
+        <button type="button" class="specimen" id="specimen" aria-label="Goyangkan botol">
+          <span class="specimen-slot" id="specimen-slot"></span>
+          <span class="specimen-hint" aria-hidden="true">ketuk untuk menggoyang</span>
+        </button>
+        <div class="id-card">
+          <p class="id-no" id="sheet-no"></p>
+          <h2 class="id-name" id="sheet-title"></h2>
+          <p class="id-sci" id="sheet-sci"></p>
+          <p class="id-note" id="sheet-note"></p>
+          <div class="id-meta">
+            <span class="stamp" id="sheet-cat"></span>
+            <span class="danger" id="sheet-danger"></span>
+          </div>
+        </div>
+        <section class="entry entry-wujud" aria-labelledby="h-wujud">
+          <h3 id="h-wujud"><span class="num">III.</span> Wujud asli</h3>
+          <p id="sheet-wujud"></p>
+          <ul class="swatches" id="sheet-swatch"></ul>
+        </section>
+      </div>
+      <div class="page page-right" id="page-right" tabindex="0" aria-label="Catatan lengkap">
+        <section class="entry" aria-labelledby="h-asal">
+          <h3 id="h-asal"><span class="num">IV.</span> Asal &amp; sumber</h3>
+          <p id="sheet-asal"></p>
+          <p class="sub-h">Bagaimana orang terpapar tanpa sengaja</p>
+          <ul class="ink-list" id="sheet-paparan"></ul>
+        </section>
+        <section class="entry" aria-labelledby="h-kerja">
+          <h3 id="h-kerja"><span class="num">V.</span> Cara kerja</h3>
+          <p id="sheet-kerja"></p>
+        </section>
+        <section class="entry" aria-labelledby="h-gejala">
+          <h3 id="h-gejala"><span class="num">VI.</span> Gejala</h3>
+          <ol class="stages" id="sheet-gejala"></ol>
+        </section>
+        <section class="entry entry-antidot" aria-labelledby="h-antidot">
+          <h3 id="h-antidot"><span class="num">VII.</span> Penawar / antidot</h3>
+          <p class="antidot-name" id="sheet-antidot"></p>
+          <p class="medic-note"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 1h4v5h5v4h-5v5H6v-5H1V6h5z" fill="currentColor"/></svg><span id="sheet-antidot-note"></span></p>
+        </section>
+        <section class="entry entry-p3k" aria-labelledby="h-p3k">
+          <h3 id="h-p3k"><span class="num">VIII.</span> Pertolongan pertama</h3>
+          <p class="p3k-call">Langkah pertama selalu sama: <a href="tel:119">telepon 119</a> atau menuju IGD.</p>
+          <div class="p3k-cols">
+            <div class="p3k-do"><p class="p3k-h">Lakukan</p><ul id="sheet-do"></ul></div>
+            <div class="p3k-dont"><p class="p3k-h">Jangan</p><ul id="sheet-dont"></ul></div>
+          </div>
+        </section>
+        <section class="entry entry-trivia" aria-labelledby="h-trivia">
+          <h3 id="h-trivia"><span class="num">IX.</span> Catatan sejarah</h3>
+          <div id="sheet-trivia"></div>
+        </section>
+        <div class="sheet-actions">
+          <button type="button" class="btn-return" id="sheet-close">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4L3 9l5 5M3.5 9H12a5 5 0 010 10h-1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Kembalikan ke Rak
+          </button>
+          <a class="btn-sos-sm" href="#/darurat">Halaman darurat</a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="sheet-x" id="sheet-x" aria-label="Tutup catatan dan kembalikan botol ke rak">×</button>
+  </article>
+
+  <noscript><p class="noscript">Apotek Gelap membutuhkan JavaScript untuk menampilkan rak. Dalam keadaan darurat, hubungi 119.</p></noscript>
+
+  <script src="js/vials.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
